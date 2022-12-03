@@ -1,21 +1,50 @@
-import { Box,Container } from "@mui/material";
-import logo from "../images/logo.jpg"
+import { Box, Container, Grid, Typography } from "@mui/material";
+import { lineHeight } from "@mui/system";
+import battery from "../images/Logo_Recreate_RGB.png";
+import "./home.css"
 
 export const Home = () => {
   return (
-    <Container maxWidth="lg">
-        <Box sx={{ bgcolor: '#749F82', height: '100vh',width:"100%",display:{md:'flex'},flexDirection:{xs:'column',md:'row'}, alignItems:'center'}} >
-          <Box mt={{md:'10%',sm:'12%',xs:'20%'}} sx={{width:{xs:'100%',md:'50%'},pl:'5%'}} >
-            <h1 style={{color:"#7DCE13",fontSize:{md:'3rem'}, textShadow:'1px 1px 4px black'}}>Complete Battery Solution</h1>
-            <p style={{fontSize:{md:'1.5rem'}}}>Equbz lithium batteries have been the pioneer of cutting-edge technology that makes it one of the most advanced lithium battery packs on the market today; custom-designed cells to deliver the highest cranking amps possible; and comes complete with a built-in BMS for performance, safety and longevity</p>
-          </Box>
-          <Box mt="10%" sx={{width:{md:'50%',xs:'100%'}}} textAlign='center'>
-            <img src={logo} width={"80%"} style={{borderRadius:'50%'}} />
-          </Box>
+    <>
+      <Box
+        className="first-box"        
+      >
+        <Box className="head-pa">
+          <h1>
+            Lithium Battery <br />
+            For e-Bikes
+          </h1>
+          <p>
+            Equbz is an Indian manufacturing and engineering company located in
+            Tamilnadu that specializes in lithium battery pack technology and
+            manufacturing. The company was founded by two electrical engineers,
+            who is passionate about technology and riding and wanted a better
+            alternative than the 180+ year old lead-acid technology. The desire
+            to remove weight was also very important and after years of research
+            and development, Equbz launched a full line of lithium batteries for
+            all your motorcycle, scooter, car, automotive, and experimental and
+            certified battery needs. we also specialize in custom battery
+            applications and can work with you on achieving desired goals and
+            finished products. We are proud to be an Indian company with a
+            mission to have the highest quality and best performing lithium
+            battery in the world!
+          </p>
         </Box>
-        <Box sx={{ bgcolor: 'white', height: '100vh' }}> </Box>
-        <Box sx={{ bgcolor: '#749F82', height: '100vh' }} />        
-    </Container>
+        <Box className="logo">
+          <img src={battery} alt="" srcset="" />
+        </Box>
+      </Box>
+      <section className="second-box">
+        <h1 style={{textAlign:'center'}}>Products</h1>
+        <Container sx={{display:'grid',gridColumn:"auto"}} >
+          <Grid item xs={12} md={4}>
+            <Box className="product">hi</Box>
+          </Grid>
+          
+        </Container>
+      </section>
+      <Box sx={{ bgcolor: "#749F82", height: "100vh" }} />
+    </>
     // <section>
     //   <Box
     //     sx={{
