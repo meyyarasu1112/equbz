@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 // import AdbIcon from '@mui/icons-material/Adb';
-import logo from "../images/logo.jpg";
+import logo from "../images/Rectangle logo.jpg";
 
 const pages = ["Home","Products", "Pricing", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -37,7 +37,7 @@ function Topbar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{display:"flex",alignItems:"center"}}>
-            <Avatar src={logo} sx={{ width: 56, height: 56 }}/>            
+            {/* <Avatar src={logo} sx={{ width: 56, height: 56 }}/>            
             <Typography
               variant="h4"
               noWrap
@@ -55,7 +55,8 @@ function Topbar() {
               }}
             >
               <span style={{color:"#82CD47"}}>e</span>Qubz
-            </Typography>
+            </Typography> */}
+            <img src={logo} width={100} height={50} />
           </Box>
 
           <Box
